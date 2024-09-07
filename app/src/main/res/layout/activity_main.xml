@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operasi Hitung"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka Pertama"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_angka1"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka Kedua"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_angka2"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilihan Operator :"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rg_operator">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/rb_plus"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/rb_minus"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:id="@+id/rb_multiply"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/rb_divide"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Hitung Hasil"
+            android:id="@+id/btn_Hitung"
+            />
+
+
+    </RadioGroup>
+
+
+   </LinearLayout>
